@@ -7,4 +7,16 @@ This code requires large Random Access Memory (RAM). We used a machine of 1.5TB 
 We suggest using either a Cloud Computing Machine (Amazon Web Services, Microsoft Azure, Google Cloud, IBM Cloud or similar) or reducing the network capacity.
 
 ## Paper
-TBA
+See our pre-print on arXiv: https://arxiv.org/abs/2101.07752
+
+Cite our paper:
+```
+@article{fernández_gutiérrez2021,
+      title={Determining Structural Properties of Artificial Neural Networks Using Algebraic Topology}, 
+      author={David Pérez Fernández and Asier Gutiérrez-Fandiño and Jordi Armengol-Estapé and Marta Villegas},
+      year={2021},
+      eprint={2101.07752},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
