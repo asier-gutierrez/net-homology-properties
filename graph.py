@@ -93,7 +93,9 @@ def model2graphig(model, method=None, layer_activation_link=False, visualize=Fal
         elif method == 'reverse':
             # Weights
             w = weights.flatten(order='C')
-            G.add_vertices(previous_node_names)
+            if first:
+                G.add_vertices(previous_node_names)
+                first = False
             G.add_vertices(node_names)
             G.add_edges([(e[0], e[1]) if w[idx] > 0 else (e[1], e[0]) for idx, e in enumerate(edges)])
             G.es[-len(currnn):]['weight'] = np.maximum(1 - np.abs(w) / max_abs_weight, min_edge_distance)
